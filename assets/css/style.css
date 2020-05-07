@@ -1,0 +1,221 @@
+@import "~swiper/css/swiper.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.hide-visibility {
+    visibility: visible!important;
+    opacity: 1!important;
+    transition: all 1s ease;
+}
+
+.hide-opacity {
+    opacity: 1;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+.info {
+    height: 25px;
+    text-align: center;
+    position: relative;
+    top: -15px;
+    font-size: 1.2em;
+}
+
+progress {
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: relative;
+    top: -15px;
+}
+
+
+.search-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+form {
+    position: relative;
+}
+
+.simple-keyboard {
+    top: 50px;
+    right: 100px;
+    position: absolute;
+    width: 600px!important;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.keyboard-btn-click {
+    filter: brightness(0.8) drop-shadow(0 0 3px rgba(100,0,0,0.5))
+}
+
+.keyboard-btn {
+    position: absolute;
+    right: 135px;
+    top: 3px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.clear-btn:before {
+    position: absolute;
+    right: 100px;
+    top: 9px;
+    content: '×';
+    transform: scale(2);
+    color: crimson;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.clear-btn:active {
+    filter: brightness(0.8) drop-shadow(0 0 3px rgba(100,0,0,0.5))
+}
+
+#search_text {
+    width: 100%;
+    height: 35px;
+    text-indent: 10px;
+    font-size: 1.1em;
+    color: white;
+    background-color: transparent;
+    border-color: gray;
+}
+
+#search_btn {
+    padding: 5px 15px;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+}
+
+#search_btn:hover {
+    filter: brightness(1.1);
+}
+
+#search_btn:active {
+    filter: none;
+}
+
+.sorting {
+    background-color: transparent;
+    padding: 5px 10px;
+    color: white;
+    width: 110px;
+    float: right;
+    position: relative;
+    top: -25px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition: all 3s ease;
+}
+
+.sorting-option {
+    color: black;
+}
+
+.swiper-container {
+    width: 90%;
+    height: 530px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.swiper-button-prev {
+    top: 400px;
+}
+
+.swiper-button-next {
+    top: 400px
+}
+
+.swiper-pagination-bullet {
+    transform: scale(1.2);
+}
+
+.movie-title,
+.movie-year,
+.movie-rating {
+    text-align: center;
+}
+
+.movie-rating,
+.movie-year {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.movie-title {
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.movie-title:hover {
+    color: crimson;
+}
+
+.movie-poster {
+    height: 400px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.movie-rating:before {
+    position: relative;
+    right: 5px;
+    content: "\2605";
+    color: crimson;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 17px;
+}
+
